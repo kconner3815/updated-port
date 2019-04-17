@@ -1,0 +1,299 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+.imagecontainer img {width: 33%; }
+
+
+
+/* start global styles*/ 
+
+
+#wrapper { 
+	margin: 0 auto;
+    width: 100%;}
+
+
+      
+a:visited {color:grey; }
+a:hover   {color: #fed867;}
+a:link    {text-decoration: none; 
+		   color: grey;
+}	
+
+
+a:link h2 {color: black; }
+a:visited h2 {black; }
+
+
+body {background-color:#fcfcfc
+}	
+
+#aboutbio { border-bottom: solid;
+			border-top: solid;
+}
+        
+.aboutbio {text-align: justify;
+	line-height: 200%;
+	font-family: helvetica;
+	margin:5%;
+	
+	
+   
+}      
+
+       
+          
+        
+
+      	         
+
+
+.imagecontainer {border-top: solid;
+}		
+
+.imagecontainer img {   
+						filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+						filter: gray; /* IE6-9 */
+  						-webkit-filter: grayscale(90%); /* Chrome 19+ & Safari 6+ */
+}
+
+.imagecontainer img:hover { filter: none;
+  -webkit-filter: grayscale(0%); }
+    
+    }
+
+#section1 {
+			width: 100%; 
+}	
+  
+  
+
+.pngs { 
+		width: 33%;
+		float:left;
+		background-color: black;
+		margin-top: 2%; 
+}
+
+.pngs img {
+			margin: auto ;
+			width: 20%;
+			display: block; 
+			padding-bottom: 5%;
+}		
+		
+		
+.contact {
+		 width: 33%;
+		 float: left;
+		 background-color: black; 
+		 padding-bottom: 4%;
+		 padding-top: 4%;
+	}
+		
+.contact img { 
+			   width: 100%;
+}
+			   
+
+.contactinfo {float: left; 
+				width: 33%;}
+			 
+
+
+
+.logo {
+    	background-color: black;
+    	box-shadow:0 0 10px black;
+     	padding-bottom: 15%;
+     	display: block;
+    	margin: auto;
+    	width: 100%;
+   		padding-top:5%;
+}
+
+
+.logo img {
+			display: block;
+    		margin-left: 21%;
+   			width: 50%;
+}
+    
+    
+footer {
+		 background-color: black; 
+		 padding: 3%;
+		 
+}
+    
+/*----------------------------------------------- Media styles --------------------------------------------------------*/
+
+
+@media screen and (min-width:816px) {
+
+.aboutbio {font-size: 15px;}
+ 
+.dropbtn {visibility: hidden;}
+}
+
+} 
+
+@media screen and (min-width:950px) {
+
+.aboutbio {font-size: 18.5px;}
+
+}
+
+
+
+
+@media screen and (min-width:1200px) {
+
+.aboutbio {font-size: 19px;}
+
+}
+
+@media screen and (min-width:1400px) {
+
+.aboutbio {font-size: 23px;}
+
+}
+@media screen and (max-width: 815px) {
+
+.logo img { width: 70%; 
+			margin: auto; 
+			display: block;
+			margin-left: 11%;
+			padding-bottom: 20%;
+			padding-top: 20%;}
+
+.container img{width: 70%;
+				padding-top: 5%;
+				padding-bottom: 5%;}
+
+.aboutbio { margin: auto; 
+			display: block;
+			width:70%;
+			float: none;  
+			padding-bottom: 5%;
+			font-size: 12px;} 
+
+
+.imagecontainer img {width: 100%;}
+
+.dropbtn {  background-color: black;
+           color: white;
+           font-size: 15px;
+           padding-top: ;
+           border: none;
+           cursor: pointer;
+            
+          
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    ;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+           position: relative;
+           display: inline-block;
+           float: left;
+           
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  
+    
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px;
+    padding-right: 800px;
+    text-decoration: none;
+    display: block;
+  
+   
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}	
+
+
+ 
+} 
+    
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+
+}
+
